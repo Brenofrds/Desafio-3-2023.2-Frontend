@@ -1,0 +1,52 @@
+/* Estilo para o título da lista de tarefas */
+.title {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #969696;
+  }
+  
+  /* Estilo para o conteúdo da lista de tarefas */
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+  }
+  
+  /* Estilo para o botão de adição de tarefa */
+  .btn {
+    margin-top: 8px;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(53, 53, 67);
+    transition: background-color 0.3s;
+  }
+  
+  /* Estilo para o botão de adição de tarefa quando hover (sobre) */
+  .btn:hover {
+    background-color: rgba(158, 158, 158, 0.8);
+    cursor: pointer;
+  }
+  
+  /* Estilo para a imagem dentro do botão de adição de tarefa */
+  img {
+    background: transparent;
+    width: 15px;
+    height: 15px;
+    margin-right: 4px;
+  }
+  
+  /* Estilo para a mensagem de lista vazia */
+  .emptyList {
+    text-align: center;
+    border: 1px dashed white;
+    border-radius: 4px;
+    padding: 4px;
+    margin-top: 15px;
+  }
+  

@@ -1,0 +1,120 @@
+/* Estilo do componente de item de tarefa */
+.taskItem {
+  font-size: 10px;
+  text-align: center;
+  display: grid;
+  grid-template-areas:
+    "title title"
+    "assignee description"
+    "deadline description"
+    "delete confirm";
+  grid-template-columns: 1fr 1fr;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+/* Estilo do título */
+.title {
+  grid-area: title;
+  margin-top: 3px;
+  font-weight: bold;
+  padding-bottom: 4px;
+  padding-right: 13px;
+  border-bottom: 1px solid #969696;
+  background: transparent;
+}
+
+/* Estilo do responsável */
+.assignee {
+  grid-area: assignee;
+  margin-top: 5px;
+  border-radius: 10px;
+  background: transparent;
+}
+
+/* Estilo do prazo */
+.deadline {
+  grid-area: deadline;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  background: transparent;
+}
+
+/* Estilo da descrição */
+.description {
+  grid-area: description;
+  margin-top: 5px;
+  border-left: 1px solid #969696;
+  padding-right: 10px;
+  background: transparent;
+}
+
+/* Estilo do botão de excluir */
+.delete {
+  grid-area: delete;
+  margin-top: 8px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  background: transparent;
+}
+
+/* Estilo do botão de confirmar */
+.confirm {
+  grid-area: confirm;
+  margin-top: 8px;
+  border-radius: 10px;
+  background: transparent;
+}
+
+/* Estilo dos botões dentro de .delete e .confirm */
+.delete button,
+.confirm button {
+  border: none;
+  background: transparent;
+}
+
+/* Estilo do input de texto */
+input[type="text"] {
+  font-size: 10px;
+  width: 100%;
+  margin-bottom: 8px;
+  text-align: center;
+  margin: 3px;
+  background: transparent;
+}
+
+/* Estilo do seletor de estado da tarefa */
+select {
+  margin-top: 8px;
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Estilo da área de texto */
+textarea {
+  font-size: 10px;
+  width: 100%;
+  margin-bottom: 8px;
+  text-align: center;
+  resize: vertical;
+  margin: 3px;
+  background: transparent;
+}
+
+/* Estilos para os diferentes estados da tarefa */
+.pending {
+  background-color: #887B6B; /* Vermelho para pendente */
+  color: #fff;
+}
+
+.inProgress {
+  background-color: #6B7E88; /* Laranja para fazendo */
+  color: #fff;
+}
+
+.completed {
+  background-color: rgb(84, 134, 118); /* Verde para feito */
+  color: #fff;
+}
